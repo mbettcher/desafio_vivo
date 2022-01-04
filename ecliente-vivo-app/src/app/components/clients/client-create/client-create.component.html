@@ -1,0 +1,55 @@
+<mat-card class="mat-elevation-z5">
+  <mat-card-title>Novo Cliente</mat-card-title>
+
+  <form class="formulario">
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Nome"
+        [(ngModel)]="client.nome"
+        name="nome"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="CPF"
+        [(ngModel)]="client.cpf"
+        name="cpf"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Telefone 1"
+        [(ngModel)]="client.telefone1"
+        name="telefone1"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Telefone 2"
+        [(ngModel)]="client.telefone2"
+        name="telefone2"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Telefone 3"
+        [(ngModel)]="client.telefone3"
+        name="telefone3"
+      />
+    </mat-form-field>
+  </form>
+
+  <button mat-raised-button (click)="saveClient()" color="primary">
+    Salvar
+  </button>
+
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>

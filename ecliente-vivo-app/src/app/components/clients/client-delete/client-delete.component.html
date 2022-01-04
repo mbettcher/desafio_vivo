@@ -1,0 +1,34 @@
+<mat-card class="mat-elevation-z5">
+  <mat-card-title>Excluir Cliente</mat-card-title>
+
+  <form class="formulario">
+    <mat-form-field>
+      <input matInput placeholder="Id" [value]="client.id" name="id" disabled>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Nome" [value]="client.nome" name="nome" disabled>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="CPF" [value]="client.cpf" name="cpf" disabled>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Telefone 1" [value]="client.telefone1" name="telefone1" disabled>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Telefone 2" [value]="client.telefone2" name="telefone2" disabled>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Telefone 3" [value]="client.telefone3" name="telefone3" disabled>
+    </mat-form-field>
+  </form>
+
+  <button mat-raised-button (click)="deleteClient()" class="delete">
+    Excluir
+  </button>
+
+  <button mat-raised-button (click)="cancel()">
+    Cancelar
+  </button>
+
+</mat-card>
+
